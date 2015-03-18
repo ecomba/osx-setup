@@ -1,0 +1,113 @@
+if &shell =~# 'fish$'
+  set shell=sh
+endif
+
+" Load all the bundles
+filetype off
+call pathogen#interpose('bundle/*')
+call pathogen#infect()
+
+set t_Co=256
+" set spell " Sets the spellchecker. Not so great when coding
+set clipboard=unnamed
+
+" Set the directories for the swp and un files
+set dir=~/.swpfiles
+set backupdir=~/.swpfiles
+set undodir=~/.undofiles
+
+let mapleader = ","
+imap jj <Esc>
+
+function! EscapeAndSafe()
+  exec ":w"
+endfunction
+
+command! EscNSafe call EscapeAndSafe()
+nnoremap <leader>w :EscNSafe<cr>
+map <leader>, :execute ":b#"<cr>
+map <leader>a :execute ":A"<cr>
+
+" Indentation and tabs
+syntax on
+filetype plugin indent on
+set tabstop=2
+set autoindent
+set expandtab
+
+set scrolloff=3
+set shiftwidth=2
+
+set showcmd
+set ruler
+set title
+set number
+set shortmess=atI
+set visualbell
+set laststatus=2
+set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 16
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=78
+
+syntax enable
+colorscheme ir_black
+
+set cursorline
+:hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white
+
+set numberwidth=4
+set backspace=indent,eol,start
+
+set incsearch
+set undofile
+
+nnoremap ' `
+nnoremap ` '
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+nnoremap <Tab> <C-w><C-w>
+
+set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+nmap <silent> <leader>srn :set relativenumber<CR>
+nmap <silent> <leader>snn :set number<CR>
+
+" NERDTree mappings
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" Specific syntax mappings
+au BufNewFile,BufRead *.pde setf arduino
+au BufNewFile,BufRead *.ejs set filetype=html
+
+" CRLTP
+map <leader>b :CtrlPBuffer<CR>
+map <leader>f :CtrlPCurFile<CR>
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_working_path_mode = 0
+set wildignore+=*/tmp/*,*.so,*.swp,*.un*,.git,*.zip,.DS_Store,.jhw-cache/*  " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\.git$|\.svn$|\.swp$|\.o$|\.un\˜$|\.DS_Store$|\.jhw-cache$'
+
+" Seeing is believing
+nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+" Unbinding the arrow keys
+set ofu=syntaxcomplete#Complete
+for prefix in ['i', 'n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
