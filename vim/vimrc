@@ -58,7 +58,7 @@ set formatoptions=qrn1
 set colorcolumn=78
 
 syntax enable
-colorscheme ir_black
+colorscheme base16-default
 
 set cursorline
 :hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white

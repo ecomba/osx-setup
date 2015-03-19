@@ -24,8 +24,8 @@ function _install_bundles
               'git@github.com:kien/rainbow_parentheses.vim.git' \
               'git@github.com:vim-ruby/vim-ruby.git' \
               'git@github.com:kchmck/vim-coffee-script.git' \
-              'git@github.com:twerth/ir_black.git' \
               'git@github.com:tpope/vim-surround.git' \
+              'git@github.com:chriskempson/base16-vim.git' \
               'git@github.com:ecomba/vim-ruby-refactoring.git'
 
   cd $vimbundledir
