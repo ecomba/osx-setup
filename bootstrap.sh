@@ -9,6 +9,6 @@ echo "Now that we have fish let's make it our default shell"
 #chsh -s /usr/local/bin/fish
 
 # HERE WE WILL START WITH THE ACTUALL INSTALLATION
-git clone git@github.com:ecomba/osx-setup.git "$HOME/.osx_setup"
-cd "$HOME/.osx_setup"
+git clone git@github.com:ecomba/osx-setup.git "$HOME/.osx-setup"
+cd "$HOME/.osx-setup"
 fish setup.fish
