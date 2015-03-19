@@ -16,7 +16,7 @@ set dir=~/.swpfiles
 set backupdir=~/.swpfiles
 set undodir=~/.undofiles
 
-let mapleader = ","
+let mapleader=","
 imap jj <Esc>
 
 function! EscapeAndSafe()
@@ -27,6 +27,13 @@ command! EscNSafe call EscapeAndSafe()
 nnoremap <leader>w :EscNSafe<cr>
 map <leader>, :execute ":b#"<cr>
 map <leader>a :execute ":A"<cr>
+
+syntax enable
+let base16colorspace=256
+colorscheme base16-default
+set background=dark
+
+set encoding=utf8
 
 " Indentation and tabs
 syntax on
@@ -45,22 +52,16 @@ set number
 set shortmess=atI
 set visualbell
 set laststatus=2
-set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 16
 
 " Airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#left_sep=' '
+let g:airline#extensions#tabline#left_alt_sep='|'
 
 set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=78
-
-syntax enable
-
-set background=dark
-colorscheme base16-default
 
 set cursorline
 :hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white
@@ -85,26 +86,15 @@ nmap <silent> <leader>snn :set number<CR>
 " NERDTree mappings
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
-" Specific syntax mappings
-au BufNewFile,BufRead *.pde setf arduino
 au BufNewFile,BufRead *.ejs set filetype=html
 
 " CRLTP
 map <leader>b :CtrlPBuffer<CR>
 map <leader>f :CtrlPCurFile<CR>
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_map='<leader>t'
+let g:ctrlp_working_path_mode=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.un*,.git,*.zip,.DS_Store,.jhw-cache/*  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$|\.svn$|\.swp$|\.o$|\.un\˜$|\.DS_Store$|\.jhw-cache$'
-
-" Seeing is believing
-nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-imap <buffer> <F5> <Plug>(seeing-is-believing-run)
-
-nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+let g:ctrlp_custom_ignore='\.git$|\.svn$|\.swp$|\.o$|\.un\˜$|\.DS_Store$|\.jhw-cache$'
 
 " Unbinding the arrow keys
 set ofu=syntaxcomplete#Complete
