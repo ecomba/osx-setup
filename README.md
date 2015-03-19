@@ -2,6 +2,11 @@
 
 This is a set of installation scripts that will get my environment going.
 
+**WARNING!!!**
+_This installation script is not ready yet and has not been tested on any
+"empty" environment. I am just setting everything up to make sure I don't
+forget anything._
+
 ## What will this do
 
 - Install homebrew and install the needed formulae.
