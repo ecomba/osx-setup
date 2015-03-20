@@ -1,27 +1,26 @@
 # osx-setup
 
-This is a set of installation scripts that will get my environment going.
+I wanted to make the installation of a new computer as easy as possible,
+borrowing the ideas of [Homebrew](http://brew.sh), I made the setup to be
+installable without having to clone a repo (_the installation will still
+clone the repo to your home directory, but into the `.osx-setup` directory_).
 
-**WARNING!!!**
-_This installation script is not ready yet and has not been tested on any
-"empty" environment. I am just setting everything up to make sure I don't
-forget anything._
+## WARNING!!!
+_This installation script has been made for me and me only. If it renders
+your system unusable remember that you used it **AT YOUR OWN RISK**.
 
 ## What will this do
 
-- Install homebrew and install the needed formulae.
-- Install cask and install software.
-- Install vim and configure it (plugins, etc)
-- Configure fish and the location of the different directories.
+- Install homebrew
+- Install and configure the [fish shell](http://fishshell.com/)
+- Install all the formulae I use normally (_and some others_)
+- Install all the vim bundles and configure my vim environment
+- Install and configure my tmux environment
+- Install cask and install some of the software I use (_and some others_)
 
 ## Installation
 
-I wanted to make the installation as easy as possible, borrowing the ideas
-of [Homebrew](http://brew.sh), I made the setup to be installable without
-having to clone a repo by hand (_it will still clone the repo to your home 
-directory, but into the `.osx-setup` directory_).
-
-If you want to install (**AT YOUR OWN RISK!**) run:
+If you want to install my configuration (**AT YOUR OWN RISK!**) run:
 
 ```
 curl -s https://raw.githubusercontent.com/ecomba/osx-setup/master/bootstrap.sh
