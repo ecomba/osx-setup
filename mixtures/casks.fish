@@ -7,7 +7,7 @@ function drum -d "Installs all the casks needed"
             'google-chrome' 'google-chrome-canary' 'firefox' \
             'iterm2' 'slack' 'intellij-idea-ce' 'virtualbox' 'cleanmymac' \
             'evernote' 'dash' 'flux' 'spotify' 'skitch' 'skype' \
-            'google-drive' 'littleipsum' 'moom'
+            'google-drive' 'littleipsum' 'moom' 'kindle'
 
   for cask in $casks
     if contains $cask $installed_casks
