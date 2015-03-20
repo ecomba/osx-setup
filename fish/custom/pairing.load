@@ -1,0 +1,22 @@
+function check_hitch
+  if not type hitch > /dev/null
+    echo "Hitch not available..."
+    echo "installing"
+    gem install hitch
+  end
+
+end
+
+function solo
+  check_hitch
+  hitch -u
+end
+
+function pair
+  check_hitch
+  if not test $argv[2]
+    echo "It takes two to pair"
+  else
+    hitch $argv[1] $argv[2]
+  end
+end

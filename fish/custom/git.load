@@ -1,0 +1,73 @@
+function ga
+  git add $argv[1]
+end
+
+function gb
+  git branch $argv[1]
+end
+
+function gc
+  git checkout $argv[1]
+end
+
+function gcl
+  git clone $argv[1]
+end
+
+function gd
+  git diff
+end
+
+function gdc
+  git diff --cached
+end
+
+function gk 
+  gitk --all&
+end
+
+function gl -d "Git log with hash, branch, description, name and time"
+  git log --pretty=tformat:'%Cred%h%Creset %Cblue%d%Creset %Cgreen%s%Creset %cn, %cr' --graph
+end
+
+function gm
+  git commit -m $argv[1]
+end
+
+function gma
+  git commit -am $argv[1]
+end
+
+function gp
+  git push
+end
+
+function gpu
+  git pull
+end
+
+function gra
+  git remote add $argv[1]
+end
+
+function grr
+  git remote rm $argv[1]
+end
+
+function gs
+  git status
+end
+
+function gx
+  gitx --all
+end
+
+# heroku
+function gps
+  git push staging develop:master
+end
+
+function gpp
+  git push production master
+end
+

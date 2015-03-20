@@ -1,0 +1,29 @@
+function b
+  bundle exec
+end
+
+function be
+  bundle exec
+end
+
+function ber
+  bundle exec rake
+end
+
+function krakken -d "RELEASE THE KRAKKEN! (rake)"
+  rake
+end
+
+function rc -d "Execute cucumber"
+  cucumber
+end
+
+function rsp -d "Run RSpec"
+  rspec
+end
+
+function bundler_installed
+  if not test -f bundle
+    gem install bundler
+  end
+end

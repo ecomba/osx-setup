@@ -1,0 +1,7 @@
+function ll
+  ls -lG
+end
+
+function cls
+  clear
+end
