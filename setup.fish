@@ -3,7 +3,7 @@
 . vim/vim.fish
 . fish/setup/fish.fish
 
-ferment
+# ferment
 setup_vim
 setup_fish
-drum
+# drum
