@@ -1,3 +1,4 @@
+. me.fish
 . mixtures/brews.fish
 . mixtures/casks.fish
 . vim/vim.fish
