@@ -13,7 +13,7 @@ function _check_dot_config
 end
 
 function _check_fish_conf
-  if not test -e/.config/fish
+  if not test -e ~/.config/fish
     mkdir ~/.config/fish
     true
   else
