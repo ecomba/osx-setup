@@ -3,7 +3,9 @@ function drum -d "Installs all the casks needed"
 
   set casks 'dropbox' '1password' 'alfred' \
             'google-chrome' 'google-chrome-canary' 'firefox' \
-            'iterm2' 'slack' 'intellij-idea-ce' 'virtualbox'
+            'iterm2' 'slack' 'intellij-idea-ce' 'virtualbox' 'cleanmymac' \
+            'evernote' 'dash' 'flux' 'spotify' 'skitch' 'skype' \
+            'google-drive' 'littleipsum' 'moom'
 
   for cask in $casks
     echo "Installing: $cask"
