@@ -3,7 +3,7 @@ function drum -d "Installs all the casks needed"
 
   set installed_casks (brew cask list)
 
-  set casks 'dropbox' '1password' 'alfred' \
+  set casks 'dropbox' '1password' 'alfred' 'mailbox' \
             'google-chrome' 'google-chrome-canary' 'firefox' \
             'iterm2' 'slack' 'intellij-idea-ce' 'virtualbox' 'cleanmymac' \
             'evernote' 'dash' 'flux' 'spotify' 'skitch' 'skype' \
