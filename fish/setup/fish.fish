@@ -21,8 +21,9 @@ end
 
 function _link_fish
   if test -e ~/.config/fish/config.fish
-    echo You already have a fish configuration!
+    echo You already have a fish configuration file
   else
+    echo Linking the configuration file
     ln -s "$HOME/.osx-setup/fish/config/config.fish" "$HOME/.config/fish/config.fish"
   end
 end
@@ -35,4 +36,3 @@ function _add_base16
     echo It seems that you have base 16 already installed, nice!
   end
 end
-setup_fish
