@@ -23,11 +23,11 @@ else
 fi
 
 # HERE WE WILL START WITH THE ACTUALL INSTALLATION
-if ! [ -d "$HOME/.osx-setup"]; then
-  git clone git@github.com:ecomba/osx-setup.git "$HOME/.osx-setup"
-  cd "$HOME/.osx-setup"
+if ! [ -d ~/.osx-setup]; then
+  git clone git@github.com:ecomba/osx-setup.git ~/.osx-setup
+  cd ~/.osx-setup
 else
-  cd "$HOME/.osx-setup"
+  cd ~/.osx-setup
   git pull
 fi
 
