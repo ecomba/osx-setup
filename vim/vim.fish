@@ -1,4 +1,5 @@
 function setup_vim -d "Installs my vim configuration and the plugins"
+  rm -f "$HOME/.vimrc"
   ln -s "$HOME/.osx-setup/vim/vimrc" "$HOME/.vimrc"
   _install_pathogen
   _install_bundles
