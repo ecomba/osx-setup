@@ -5,7 +5,3 @@ end
 function cls
   clear
 end
-
-function j
-  jump $argv[1]
-end
