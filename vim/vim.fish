@@ -21,7 +21,6 @@ function _install_bundles
               'git@github.com:roman/golden-ratio.git' \
               'git@github.com:tpope/vim-haml.git' \
               'git@github.com:andreimaxim/vim-io.git' \
-              'git@github.com:scrooloose/nerdtree.git' \
               'git@github.com:kien/rainbow_parentheses.vim.git' \
               'git@github.com:vim-ruby/vim-ruby.git' \
               'git@github.com:kchmck/vim-coffee-script.git' \
