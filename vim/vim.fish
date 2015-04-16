@@ -28,7 +28,8 @@ function _install_bundles
               'git@github.com:tpope/vim-surround.git' \
               'git@github.com:chriskempson/base16-vim.git' \
               'git@github.com:tpope/vim-endwise.git' \
-              'git@github.com:ecomba/vim-ruby-refactoring.git'
+              'git@github.com:ecomba/vim-ruby-refactoring.git' \
+              'git://github.com/tmux-plugins/vim-tmux.git'
 
   cd $vimbundledir
   for bundle in $bundles
