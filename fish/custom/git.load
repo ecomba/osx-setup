@@ -46,6 +46,10 @@ function gpu
   git pull
 end
 
+function gpur
+  git pull --rebase --ff
+end
+
 function gra
   git remote add $argv[1]
 end
