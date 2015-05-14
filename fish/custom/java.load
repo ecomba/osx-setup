@@ -3,3 +3,7 @@ function reset_maven
   rm ~/.m2/settings.xml
   ln -s ~/.m2/ecomba_maven_repo ~/.m2/repository
 end
+
+function mct
+  mvn clean test
+end
