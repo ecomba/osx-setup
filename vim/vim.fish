@@ -30,7 +30,8 @@ function _install_bundles
               'git@github.com:tpope/vim-endwise.git' \
               'git@github.com:ecomba/vim-ruby-refactoring.git' \
               'git://github.com/tmux-plugins/vim-tmux.git' \
-              'git@github.com:elzr/vim-json.git'
+              'git@github.com:elzr/vim-json.git' \
+              'git@github.com:nanotech/jellybeans.vim.git'
 
   cd $vimbundledir
   for bundle in $bundles
