@@ -62,7 +62,7 @@ function prompt_segment -d "Function to draw a segment"
     set_color $current_bg
     echo -n "$segment_separator "
     set_color -b $bg
-    set_color $fg
+    set_color 1c1c1c
   else
     set_color -b $bg
     set_color $fg

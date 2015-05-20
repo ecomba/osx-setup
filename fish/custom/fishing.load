@@ -5,3 +5,7 @@ end
 function cls
   clear
 end
+
+function herro
+  fish ~/.osx-setup/me.fish
+end
