@@ -9,3 +9,7 @@ end
 function herro
   fish ~/.osx-setup/me.fish
 end
+
+funciont grpc
+  grep --color
+end
