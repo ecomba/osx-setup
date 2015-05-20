@@ -10,6 +10,6 @@ function herro
   fish ~/.osx-setup/me.fish
 end
 
-funciont grpc
+function grpc
   grep --color
 end
