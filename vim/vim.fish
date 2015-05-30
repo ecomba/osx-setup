@@ -31,7 +31,8 @@ function _install_bundles
               'git@github.com:ecomba/vim-ruby-refactoring.git' \
               'git://github.com/tmux-plugins/vim-tmux.git' \
               'git@github.com:elzr/vim-json.git' \
-              'git@github.com:nanotech/jellybeans.vim.git'
+              'git@github.com:nanotech/jellybeans.vim.git' \
+              'git@github.com:szw/vim-tags.git'
 
   cd $vimbundledir
   for bundle in $bundles
