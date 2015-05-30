@@ -1,9 +1,9 @@
 function b
-  bundle exec
+  bundle exec $argv
 end
 
 function be
-  bundle exec
+  bundle exec $argv
 end
 
 function ber
