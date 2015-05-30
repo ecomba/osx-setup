@@ -10,6 +10,14 @@ function ber
   bundle exec rake
 end
 
+function cukes
+  b cucumber
+end
+
+function cuke
+  cukes
+end
+
 function krakken -d "RELEASE THE KRAKKEN! (rake)"
   rake
 end
