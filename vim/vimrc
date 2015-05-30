@@ -33,8 +33,10 @@ map <leader>a :execute ":A"<cr>
 
 syntax enable
 let base16colorspace=256
-colorscheme jellybeans
 set background=dark
+colorscheme jellybeans
+"set background=light
+"colorscheme donbass
 
 set encoding=utf8
 

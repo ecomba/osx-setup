@@ -1,6 +1,8 @@
 set fish_path $HOME/.osx-setup/fish
 
-set fish_theme agnoster
+set -gx  LC_ALL en_US.UTF-8 
+
+set fish_theme bobthefish
 
 set fish_plugins theme jump git-flow chruby vi-mode brew tmux
 
@@ -26,3 +28,4 @@ set fish_function_path $user_function_path $fish_function_path
 
 # Make sure to exit with $status of 1 when reloading the framework.
 or true
+tmux new -s unicorns
