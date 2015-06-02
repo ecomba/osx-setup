@@ -57,6 +57,7 @@ set number
 set shortmess=atI
 set visualbell
 set laststatus=2
+set cmdheight=1
 
 " Airline
 let g:airline#extensions#tabline#enabled=1
