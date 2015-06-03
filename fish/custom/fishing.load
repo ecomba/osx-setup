@@ -1,3 +1,7 @@
+function l
+  ls
+end
+
 function ll
   ls -lG
 end
