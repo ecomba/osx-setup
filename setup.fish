@@ -4,6 +4,7 @@
 . vim/vim.fish
 . fish/setup/fish.fish
 . tmux/tmux.fish
+. tools/tools.fish
 
 ferment
 setup_vim
