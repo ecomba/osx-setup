@@ -1,0 +1,19 @@
+function timeline
+  t timeline -l
+end
+
+function tweet
+  t update $argv[1]
+end
+
+function retweet
+  t retweet $argv[1]
+end
+
+function dm
+  t dm $argv[1] $argv[2]
+end
+
+function reply
+  t reply $argv[1] $argv[2]
+end
