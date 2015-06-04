@@ -14,4 +14,3 @@ function install_offlineimap
   ln -s "$HOME/.osx-setup/tools/offlineimap.py" "$HOME/.mutt/offlineimap.py"
 end
 
-install_offlineimap
