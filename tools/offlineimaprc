@@ -27,7 +27,7 @@ nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
 maxconnections = 1
 type = Gmail
 ssl = yes
-cert_fingerprint =
+sslcacertfile = ~/.mutt/certificates.pem
 remoteuser = ecomba@patheleven.com
 remotepasseval = get_keychain_pass(account="ecomba@patheleven.com", server="imap.gmail.com")
 realdelete = no
