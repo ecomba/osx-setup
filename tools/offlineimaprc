@@ -1,5 +1,8 @@
 [general]
-ui = TTY.TTYUI
+# ui = TTY.TTYUI
+# ui = Noninteractive.Quiet
+# ui = Noninteractive.Basic
+# ui = Curses.Blinkenlights
 accounts = ecomba_patheleven
 pythonfile=~/.mutt/offlineimap.py
 fsync = False
@@ -23,6 +26,8 @@ nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
 [Repository ecomba_patheleven-Remote]
 maxconnections = 1
 type = Gmail
+ssl = yes
+cert_fingerprint =
 remoteuser = ecomba@patheleven.com
 remotepasseval = get_keychain_pass(account="ecomba@patheleven.com", server="imap.gmail.com")
 realdelete = no
