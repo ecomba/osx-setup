@@ -17,3 +17,7 @@ end
 function battery
   pmset -g ps | sed -e '$!N;s/\n/ /' -e 's/\;\ AC\ attached\;\ not\ charging//;s/discharging\;//' -e 's/Currenty\ drawing\ from/\ /;s/\ \ -Internal/\ \ \|\ \ /;s/-0./\ :\ \ /;s/\;/\ \ \ \>\ /g' | iconv -f utf-8 -t ucs-2-internal
 end
+
+function lockscreen
+  /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+end
