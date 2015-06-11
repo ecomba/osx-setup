@@ -1,0 +1,11 @@
+function 8thlight
+  mutt -f $HOME/.mail/8thlight/INBOX
+end
+
+function patheleven
+  mutt -f $HOME/.mail/patheleven/INBOX
+end
+
+function mail_sync
+  mbsync 8thlight patheleven
+end
