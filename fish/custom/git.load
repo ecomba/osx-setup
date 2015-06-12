@@ -22,6 +22,10 @@ function gdc
   git diff --cached
 end
 
+function gprune
+  git remote update origin --prune
+end
+
 function gk 
   gitk --all&
 end
