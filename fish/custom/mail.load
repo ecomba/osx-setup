@@ -6,6 +6,10 @@ function patheleven
   mutt -f $HOME/.mail/patheleven/INBOX
 end
 
-function sync_all_mail
+function ecombaorg
+  mutt -f $HOME/.mail/ecombaorg/INBOX
+end
+
+function syncmail
   mbsync 8thlight patheleven
 end

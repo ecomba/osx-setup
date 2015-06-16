@@ -59,6 +59,9 @@ set visualbell
 set laststatus=2
 set cmdheight=1
 
+set showtabline=2
+set guioptions-=e
+
 " Airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=' '
@@ -101,6 +104,7 @@ let g:ctrlp_map='<leader>t'
 let g:ctrlp_working_path_mode=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.un*,.git,*.zip,.DS_Store,.jhw-cache/*  " MacOSX/Linux
 let g:ctrlp_custom_ignore='\.git$|\.svn$|\.swp$|\.o$|\.un\˜$|\.DS_Store$|\.jhw-cache$'
+let g:tablabel ="%N%{flagship#tabmodified()} %{flagship#tabcwds('shorten',',')}"
 
 " Unbinding the arrow keys
 set ofu=syntaxcomplete#Complete
