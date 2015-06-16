@@ -10,14 +10,14 @@ function cls
   clear
 end
 
-function herro
+function herro -d "Shows my face"
   fish ~/.osx-setup/me.fish
 end
 
-function battery
+function battery -d "Displays the current battery status"
   pmset -g ps | sed -e '$!N;s/\n/ /' -e 's/\;\ AC\ attached\;\ not\ charging//;s/discharging\;//' -e 's/Currenty\ drawing\ from/\ /;s/\ \ -Internal/\ \ \|\ \ /;s/-0./\ :\ \ /;s/\;/\ \ \ \>\ /g' | iconv -f utf-8 -t ucs-2-internal
 end
 
-function lockscreen
+function lst -d "Locks the computer"
   /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 end
