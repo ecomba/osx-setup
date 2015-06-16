@@ -10,6 +10,6 @@ function ecombaorg
   mutt -f $HOME/.mail/ecombaorg/INBOX
 end
 
-function syncmail
+function syncmail -d "Syncs the various email accounts"
   mbsync 8thlight patheleven ecombaorg
 end
