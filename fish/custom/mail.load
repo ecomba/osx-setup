@@ -11,5 +11,5 @@ function ecombaorg
 end
 
 function syncmail
-  mbsync 8thlight patheleven
+  mbsync 8thlight patheleven ecombaorg
 end
