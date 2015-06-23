@@ -7,3 +7,15 @@ end
 function mct
   mvn clean test
 end
+
+function set_java -d "Sets the version of java to use"
+  set -gx JAVA_HOME (/usr/libexec/java_home -v $argv[1])
+end
+
+function java_1_6
+  set_java 1.6
+end
+
+function java_8
+  set_java 1.8
+end
