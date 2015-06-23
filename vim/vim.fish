@@ -32,7 +32,8 @@ function _install_bundles
               'git://github.com/tmux-plugins/vim-tmux.git' \
               'git@github.com:elzr/vim-json.git' \
               'git@github.com:nanotech/jellybeans.vim.git' \
-              'git@github.com:szw/vim-tags.git'
+              'git@github.com:szw/vim-tags.git' \
+              'git@github.com:dkprice/vim-easygrep.git'
 
   cd $vimbundledir
   for bundle in $bundles
