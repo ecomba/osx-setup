@@ -1,3 +1,7 @@
+function e
+  emacs $argv[1]
+end
+
 function l
   ls
 end
