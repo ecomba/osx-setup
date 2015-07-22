@@ -75,6 +75,9 @@ set colorcolumn=78
 set cursorline
 :hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white
 
+:hi TabLineSel ctermfg=white ctermbg=blue
+:hi TabLine ctermfg=white ctermbg=darkgrey
+
 set numberwidth=4
 set backspace=indent,eol,start
 
