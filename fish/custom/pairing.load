@@ -4,7 +4,6 @@ function check_hitch
     echo "installing"
     gem install hitch
   end
-
 end
 
 function solo
