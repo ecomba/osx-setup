@@ -15,9 +15,9 @@ set t_Co=256
 set clipboard=unnamed
 
 " Set the directories for the swp and un files
-set dir=~/.swpfiles
-set backupdir=~/.swpfiles
-set undodir=~/.undofiles
+set noswapfile
+set backupdir=~/.vim/backup
+set undodir=~/.vim/undo
 
 let mapleader=","
 imap jj <Esc>
