@@ -5,9 +5,12 @@ set -gx HOMEBREW_GITHUB_API_TOKEN d2d07383690d9642289bc0eec524f585dce926c8
 
 set fish_theme bobthefish
 
-set fish_plugins theme jump git-flow chruby vi-mode brew tmux
+#set fish_plugins theme jump git-flow chruby vi-mode brew tmux
+set theme jump git-flow chruby vi-mode brew tmux
 
-eval sh $HOME/.config/base16-shell/base16-default.dark.sh
+if status --is-interactive
+  sh $HOME/.config/base16-shell/base16-default.dark.sh
+end
 
 if not contains $fish_path/functions/ $fish_function_path
   set fish_function_path $fish_path/functions/ $fish_function_path
