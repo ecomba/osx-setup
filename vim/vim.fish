@@ -12,28 +12,28 @@ function _install_pathogen
 end
 
 function _install_bundles
-  set bundles 'git@github.com:mileszs/ack.vim.git' \
-              'git@github.com:bling/vim-airline' \
-              'git@github.com:kien/ctrlp.vim.git' \
-              'git@github.com:tpope/vim-cucumber.git' \
-              'git@github.com:elixir-lang/vim-elixir.git' \
-              'git@github.com:dag/vim-fish.git' \
-              'git@github.com:roman/golden-ratio.git' \
-              'git@github.com:tpope/vim-haml.git' \
-              'git@github.com:andreimaxim/vim-io.git' \
-              'git@github.com:scrooloose/nerdtree.git' \
-              'git@github.com:kien/rainbow_parentheses.vim.git' \
-              'git@github.com:vim-ruby/vim-ruby.git' \
-              'git@github.com:kchmck/vim-coffee-script.git' \
-              'git@github.com:tpope/vim-surround.git' \
-              'git@github.com:chriskempson/base16-vim.git' \
-              'git@github.com:tpope/vim-endwise.git' \
-              'git@github.com:ecomba/vim-ruby-refactoring.git' \
-              'git://github.com/tmux-plugins/vim-tmux.git' \
-              'git@github.com:elzr/vim-json.git' \
-              'git@github.com:nanotech/jellybeans.vim.git' \
-              'git@github.com:szw/vim-tags.git' \
-              'git@github.com:dkprice/vim-easygrep.git'
+  set bundles 'https://github.com/mileszs/ack.vim.git' \
+              'https://github.com/bling/vim-airline' \
+              'https://github.com/kien/ctrlp.vim.git' \
+              'https://github.com/tpope/vim-cucumber.git' \
+              'https://github.com/elixir-lang/vim-elixir.git' \
+              'https://github.com/dag/vim-fish.git' \
+              'https://github.com/roman/golden-ratio.git' \
+              'https://github.com/tpope/vim-haml.git' \
+              'https://github.com/andreimaxim/vim-io.git' \
+              'https://github.com/scrooloose/nerdtree.git' \
+              'https://github.com/kien/rainbow_parentheses.vim.git' \
+              'https://github.com/vim-ruby/vim-ruby.git' \
+              'https://github.com/kchmck/vim-coffee-script.git' \
+              'https://github.com/tpope/vim-surround.git' \
+              'https://github.com/chriskempson/base16-vim.git' \
+              'https://github.com/tpope/vim-endwise.git' \
+              'https://github.com/ecomba/vim-ruby-refactoring.git' \
+              'https://github.com/tmux-plugins/vim-tmux.git' \
+              'https://github.com/elzr/vim-json.git' \
+              'https://github.com/nanotech/jellybeans.vim.git' \
+              'https://github.com/szw/vim-tags.git' \
+              'https://github.com/dkprice/vim-easygrep.git'
 
   cd $vimbundledir
   for bundle in $bundles
