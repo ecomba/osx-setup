@@ -5,8 +5,7 @@ set -gx HOMEBREW_GITHUB_API_TOKEN d2d07383690d9642289bc0eec524f585dce926c8
 
 set fish_theme bobthefish
 
-#set fish_plugins theme jump git-flow chruby vi-mode brew tmux
-set theme jump git-flow chruby vi-mode brew tmux
+set fish_plugins theme jump git-flow chruby brew tmux
 
 if status --is-interactive
   sh $HOME/.config/base16-shell/base16-default.dark.sh
@@ -32,4 +31,4 @@ set fish_function_path $user_function_path $fish_function_path
 
 # Make sure to exit with $status of 1 when reloading the framework.
 or true
-tmux new -s unicorns; or tmux attach -t unicorns
+#tmux new -s unicorns; or tmux attach -t unicorns
