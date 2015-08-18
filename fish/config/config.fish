@@ -7,6 +7,8 @@ set fish_theme bobthefish
 
 set fish_plugins theme jump git-flow chruby brew tmux
 
+set fish_key_bindings fish_vi_key_bindings
+
 if status --is-interactive
   sh $HOME/.config/base16-shell/base16-default.dark.sh
 end
