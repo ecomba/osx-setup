@@ -31,4 +31,4 @@ set fish_function_path $user_function_path $fish_function_path
 
 # Make sure to exit with $status of 1 when reloading the framework.
 or true
-#tmux new -s unicorns; or tmux attach -t unicorns
+tmux new -s unicorns; or tmux attach -t unicorns
