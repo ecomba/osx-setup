@@ -79,3 +79,7 @@ function gpp
   git push production master
 end
 
+function grh
+  git reset --hard
+end
+
