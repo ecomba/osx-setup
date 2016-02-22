@@ -7,7 +7,7 @@ clone the repo to your home directory, but into the `.osx-setup` directory_).
 
 ## WARNING!!!
 _This installation script has been made for me and me only. If it renders
-your system unusable remember that you used it **AT YOUR OWN RISK**.
+your system unusable remember that you used it_ **AT YOUR OWN RISK**.
 
 ## What will this do
 
