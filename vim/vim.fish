@@ -33,7 +33,10 @@ function _install_bundles
               'https://github.com/elzr/vim-json.git' \
               'https://github.com/nanotech/jellybeans.vim.git' \
               'https://github.com/szw/vim-tags.git' \
-              'https://github.com/dkprice/vim-easygrep.git'
+              'https://github.com/dkprice/vim-easygrep.git' \
+              'https://github.com/tpope/vim-fugitive.git' \
+              'https://github.com/jplaut/vim-arduino-ino.git' \
+              'https://github.com/tfnico/vim-gradle.git'
 
   cd $vimbundledir
   for bundle in $bundles
