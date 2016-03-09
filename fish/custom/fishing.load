@@ -26,6 +26,11 @@ function lst -d "Locks the computer"
   /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 end
 
+function vi
+  ctags -R .
+  vim
+end
+
 function poop
   echo "
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
