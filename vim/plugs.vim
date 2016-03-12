@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline-themes'
 
   Plug 'chriskempson/base16-vim'
-  Plug 'nanotech/jellybeans.vim'
 
   Plug 'roman/golden-ratio'
 
@@ -19,12 +18,11 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-endwise'
-  Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-cucumber'
 
-  Plug 'kien/ctrlp.vim'
+  Plug 'ctrlpvim/ctrlp.vim',          { 'on': 'CtrlP' }
   Plug 'scrooloose/nerdtree',         { 'on': 'NERDTreeToggle' }
-  Plug 'tfnico/vim-gradle',           { 'for': 'gradle' }
+  Plug 'tfnico/vim-gradle',           { 'for': 'groovy' }
   Plug 'vim-ruby/vim-ruby',           { 'for': 'ruby' }
   Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
   Plug 'tpope/vim-haml',              { 'for': 'haml' }
