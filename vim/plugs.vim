@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-cucumber'
 
-  Plug 'ctrlpvim/ctrlp.vim',          { 'on': 'CtrlP' }
+  Plug 'junegunn/fzf',                { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'scrooloose/nerdtree',         { 'on': 'NERDTreeToggle' }
   Plug 'tfnico/vim-gradle',           { 'for': 'groovy' }
   Plug 'vim-ruby/vim-ruby',           { 'for': 'ruby' }
