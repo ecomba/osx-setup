@@ -1,11 +1,12 @@
+alias gt "gradle test"
+alias gct "gradle clean test"
+alias mt "maven test"
+alias mct "maven clean test"
+
 function reset_maven
   rm ~/.m2/repository
   rm ~/.m2/settings.xml
   ln -s ~/.m2/ecomba_maven_repo ~/.m2/repository
-end
-
-function mct
-  mvn clean test
 end
 
 function set_java -d "Sets the version of java to use"
