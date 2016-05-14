@@ -7,7 +7,7 @@ function ferment -d "Installs all the formulae needed"
                 'chruby' 'chruby-fish' 'elixir' 'erlang' 'go' 'groovy' \
                 'io' 'maven' 'mit-scheme' 'node' 'phantomjs' 'tmate' \
                 'ruby-build' 'mysql' 'postgresql' 'python3' 'jq' \
-                'boot2docker' 'docker' 'mutt' 'sqlite' 'ino' 'fzf'
+                'boot2docker' 'docker' 'mutt' 'sqlite' 'ino' 'fzf' 'nvim'
 
   for formula in $formulae
     if contains $formula $installed_formulae
