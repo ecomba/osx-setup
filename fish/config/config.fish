@@ -1,7 +1,7 @@
 set fish_path $HOME/.osx-setup/fish
 
 set -gx LC_ALL en_US.UTF-8
-set -gx HOMEBREW_GITHUB_API_TOKEN cdec2f6995e4f7e973fde16d66b80dcfc2b4a640
+set -gx HOMEBREW_GITHUB_API_TOKEN 13cb03cd5d057237240b0befe073ddcb0cdfe1d2
 
 set fish_theme bobthefish
 
