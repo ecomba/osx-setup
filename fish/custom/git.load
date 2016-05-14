@@ -42,6 +42,10 @@ function gma
   git commit -am $argv[1]
 end
 
+function gv
+  git commit -v
+end
+
 function gp
   git push
 end
