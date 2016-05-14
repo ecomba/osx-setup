@@ -6,6 +6,7 @@ autocmd FileType fish compiler fish
 autocmd FileType fish setlocal textwidth=79
 filetype off
 
+set rtp+=/usr/local/opt/fzf
 so ~/.vim/plugs.vim
 
 set t_Co=256
@@ -63,7 +64,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=' '
 let g:airline#extensions#tabline#left_alt_sep='|'
 let g:airline_powerline_fonts=1
-let g:airline_theme='base16-default'
+let g:airline_theme='base16_default'
 
 set wrap
 set textwidth=79

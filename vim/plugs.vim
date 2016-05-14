@@ -20,14 +20,15 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-cucumber'
 
-  Plug 'junegunn/fzf',                { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'scrooloose/nerdtree',         { 'on': 'NERDTreeToggle' }
-  Plug 'tfnico/vim-gradle',           { 'for': 'groovy' }
-  Plug 'vim-ruby/vim-ruby',           { 'for': 'ruby' }
-  Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
-  Plug 'tpope/vim-haml',              { 'for': 'haml' }
-  Plug 'kchmck/vim-coffee-script',    { 'for': 'coffee' }
-  Plug 'elixir-lang/vim-elixir',      { 'for': 'elixir' }
-  Plug 'andreimaxim/vim-io',          { 'for': 'io' }
-  Plug 'elzr/vim-json',               { 'for': 'json' }
+  Plug 'junegunn/fzf',                  { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'scrooloose/nerdtree',           { 'on': 'NERDTreeToggle' }
+  Plug 'tfnico/vim-gradle',             { 'for': 'groovy' }
+  Plug 'vim-ruby/vim-ruby',             { 'for': 'ruby' }
+  Plug 'ecomba/vim-ruby-refactoring',   { 'for': 'ruby' }
+  Plug 'tpope/vim-haml',                { 'for': 'haml' }
+  Plug 'kchmck/vim-coffee-script',      { 'for': 'coffee' }
+  Plug 'elixir-lang/vim-elixir',        { 'for': 'elixir' }
+  Plug 'andreimaxim/vim-io',            { 'for': 'io' }
+  Plug 'elzr/vim-json',                 { 'for': 'json' }
+  Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
 call plug#end()
