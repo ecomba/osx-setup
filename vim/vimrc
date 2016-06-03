@@ -6,11 +6,17 @@ autocmd FileType fish compiler fish
 autocmd FileType fish setlocal textwidth=79
 filetype off
 
+set encoding=utf8
+
+set t_Co=256
+set t_AB=^[[48;5;%dm
+set t_AF=^[[38;5;%dm
+
 set rtp+=/usr/local/opt/fzf
 so ~/.vim/plugs.vim
 
-set t_Co=256
-" set spell " Sets the spellchecker. Not so great when coding
+"set spell " Sets the spellchecker. Not so great when coding
+
 set clipboard=unnamed
 
 " Set the directories for the swp and un files
@@ -34,8 +40,6 @@ syntax enable
 let base16colorspace=256
 set background=dark
 colorscheme base16-default
-
-set encoding=utf8
 
 " Indentation and tabs
 syntax on
