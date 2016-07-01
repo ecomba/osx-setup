@@ -31,4 +31,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'andreimaxim/vim-io',            { 'for': 'io' }
   Plug 'elzr/vim-json',                 { 'for': 'json' }
   Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+  Plug 'vim-scripts/bats',              { 'for': 'bats' }
 call plug#end()
