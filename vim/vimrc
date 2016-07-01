@@ -115,3 +115,27 @@ for prefix in ['i', 'n', 'v']
     exe prefix . "noremap " . key . " <Nop>"
   endfor
 endfor
+
+nnoremap <silent> <Leader>g :call fzf#run({
+      \ 'down': '40%',
+      \ 'source': "git grep " . expand("<cword>"),
+      \ 'sink': function("Extract_from_grep"),
+      \ })<CR>
+
+nnoremap <silent> <Leader>G :call fzf#run({
+      \ 'down': '40%',
+      \ 'source': "git grep -l " . expand("<cword>"),
+      \ 'sink': "e",
+      \ })<CR>
+
+function! s:escape(path)
+	return substitute(a:path, ' ', '\\ ', 'g')
+endfunction
+
+function! Extract_from_grep(line)
+	let parts = split(a:line, ':')
+	let [fn, lno] = parts[0 : 1]
+	execute 'e '. s:escape(fn)
+	execute lno
+	normal! zz
+endfunction
